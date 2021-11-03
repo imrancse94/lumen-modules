@@ -13,8 +13,8 @@ use Illuminate\Http\Request;
 |
 */
 
-$router->group(['prefix' => '$LOWER_NAME$'], function () use ($router) {
-    $router->get('/',, function (Request $request) {
+$router->group(['prefix' => 'testmodule'], function () use ($router) {
+    $router->get('/', function (Request $request) {
         return $request->user();
-    })
+    });
 });
