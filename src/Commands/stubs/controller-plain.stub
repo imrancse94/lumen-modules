@@ -2,7 +2,7 @@
 
 namespace $CLASS_NAMESPACE$;
 
-use Illuminate\Routing\Controller;
+use Laravel\Lumen\Routing\Controller;
 
 class $CLASS$ extends Controller
 {
