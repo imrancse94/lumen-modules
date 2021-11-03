@@ -33,8 +33,6 @@ class $CLASS$ extends ServiceProvider
     public function map()
     {
         $this->mapApiRoutes();
-
-        $this->mapWebRoutes();
     }
 
     /**
@@ -44,14 +42,7 @@ class $CLASS$ extends ServiceProvider
      *
      * @return void
      */
-    protected function mapWebRoutes()
-    {
-        app()->router->group([
-            'namespace' => $this->moduleNamespace
-        ], function ($router) {
-            require module_path('$MODULE$', '$WEB_ROUTES_PATH$');
-        });
-    }
+    
 
     /**
      * Define the "api" routes for the application.
